@@ -1,0 +1,24 @@
+<!-- Interpolation -->
+<p class="text">{{ username }}</p>
+<input value="{{ username }}" />
+
+<!-- property name -->
+<input [value]="username" />
+<button [disabled]="isDisabled">Click</button>
+
+<!-- Event binding -->
+<button (click)="changeUserName('Dan Nguyen')">Change username</button>
+
+
+<p>{{ message }}</p>
+<input type="text" #messageRef/>
+<button (click)="changeMessage(messageRef.value)">Click</button>
+
+<br /><br />
+
+<p>{{ message2 }}</p>
+<input type="text" (input)="changeMessage2(message2Ref.value)" #message2Ref />
+
+<p> {{message4 }}</p>
+<input type="text" [(ngModel)]="message4">
+<!-- [] is this value, ()is  this event input text -->

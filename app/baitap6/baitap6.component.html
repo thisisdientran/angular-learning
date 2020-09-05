@@ -1,0 +1,27 @@
+<h1>Quản lý danh mục sản phẩm</h1>
+
+<p>Mã SP</p>
+<input type="text" placeholder="MTB" #input_maSP/>
+<p>Tên SP</p>
+<input type="text" placeholder="Máy tính bảng" #input_tenSP/>
+<p>Giá </p>
+<input type="text" placeholder="10000" #input_giaSP/>
+
+<button class="btn btn-success" (click)="addProduct(input_maSP.value, #input_tenSP.value, input_giaSP.value)">Thêm SP</button>
+
+<table>
+    <tbody>
+        <tr>
+            <th>STT</th>
+            <th>Ma SP</th>
+            <th>Ten SP</th>
+            <th>Gia</th>
+        </tr>
+        <tr [ngClass]="{ bg: i % 2 === 0 }" *ngFor= "let item of listProduct; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{item.maSP}}</td>
+            <td>{{item.tenSP}}</td>
+            <td>{{item.giaSP}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,18 @@
+.sidebar{
+    position: relative;
+
+    height: 80vh;
+    background-color: 
+    #2E7D32;
+
+    p {
+        color: white;
+        font-family: "arial";
+        font-size: 2rem;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }    
+}

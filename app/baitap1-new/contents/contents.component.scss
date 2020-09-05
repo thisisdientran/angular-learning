@@ -1,0 +1,18 @@
+.contents{
+    position: relative;
+
+    height: 80vh;
+    background-color: 
+    #FFEA00;
+
+    p {
+        color: white;
+        font-family: "arial";
+        font-size: 2rem;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

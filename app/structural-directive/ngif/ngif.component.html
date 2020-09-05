@@ -1,0 +1,17 @@
+<p>ngif works!</p>
+
+<div *ngif="status">Cybersoft</div>
+<button class="btn btn-success" (click)="show()">Show</button>
+<button class="btn btn-alert">Hide</button>
+
+<hr />
+
+<div *ngif="statusLogin; else NoiDungElse">
+    <h3>Xin chào</h3>
+    <button class="btn btn-info" (click)="login()">Đăng xuất</button>
+</div>
+
+<ng-template #NoiDungElse>
+    <h3>Chưa đăng nhập</h3>
+    <button class="btn btn-info" (click)="logout()">Đăng nhập</button>
+</ng-template>

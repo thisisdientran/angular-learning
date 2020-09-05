@@ -1,0 +1,16 @@
+<h1>{{message}}</h1>
+<br />
+<h2>{{message_fullName}}:</h2>
+<input type="text" placeholder="Enter full name" #fullNameRef/>
+<br /><br />
+
+<h2>{{message_email}}:</h2>
+<input type="text" placeholder="Enter email" [(ngModel)] = "input_email"/>
+<br /><br />
+
+<button class="btn btn-success" (click)="submit_fullName(fullNameRef.value)">Submit</button>
+
+<br /><br />
+<p>{{message_fullName}}: {{input_fullName}}</p>
+<p>{{message_email}}: {{input_email}} </p>
+<br />
